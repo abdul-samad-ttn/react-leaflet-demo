@@ -1,0 +1,13 @@
+.map-root-wrapper {
+    width: 100%;
+}
+
+.leaflet-map-container {
+    width: 100%;
+    height: 30rem;
+}
+
+.leaflet-container {
+    width: 100%;
+    height: 100%;
+  }

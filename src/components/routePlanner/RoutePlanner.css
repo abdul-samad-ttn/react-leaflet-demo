@@ -1,0 +1,20 @@
+.search-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem 2rem;
+    gap: 2rem
+}
+
+.input-group-wrapper {
+    width: fit-content !important;
+}
+
+.react-select-root {
+    width: 20rem;
+}
+
+.submit-wrapper {
+    float: right;
+}

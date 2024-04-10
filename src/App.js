@@ -1,23 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import SelectDropdownPortalContainer from './components/shared/reactSelectDropdown/dropdownPortal/DropdownPortal';
+import CustomToastContainer from './components/shared/toastContainer/ToastContainer';
+import MapSearch from './pages/MapSearch/MapSearch';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+      <MapSearch />
+      <SelectDropdownPortalContainer />
+      <CustomToastContainer/>
     </div>
   );
 }
