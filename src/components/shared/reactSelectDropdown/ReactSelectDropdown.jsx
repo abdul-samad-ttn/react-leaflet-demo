@@ -7,11 +7,12 @@ const ReactSelectDropdown = (props) => {
         value,
         options,
         onChange = () => null,
-        onInputChange = () => null,
+        onInputChange = () => "",
         isMulti,
         closeMenuOnSelect = true,
         classes = {},
-        isClearable=true
+        isClearable=true,
+        placeholder = "Select"
     } = props
 
     const selectStyles = {
@@ -36,6 +37,7 @@ const ReactSelectDropdown = (props) => {
             className={classes.root}
             // menuIsOpen={true}
             isClearable={isClearable}
+            placeholder={placeholder}
         />
     )
 }

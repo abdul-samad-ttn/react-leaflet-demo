@@ -1,7 +1,8 @@
 import { useMemo, useReducer, useCallback } from "react"
 import MapCustomContext from "./MapCustomContext"
 import { MapCustomReducer } from "./MapCustomReducer"
-import { InitialMapState, SET_MAP_CENTER, SET_MAP_ROUTE_NAVIGATION_POINTS } from "./actionTypes"
+import { InitialMapState, SET_MAP_CENTER, SET_MAP_REF, SET_MAP_ROUTE_NAVIGATION_POINTS } from "./actionTypes"
+import { type } from "@testing-library/user-event/dist/type"
 
 export const MapContextProvider = ({children}) => {
 
@@ -15,12 +16,17 @@ export const MapContextProvider = ({children}) => {
         dispatch({type:SET_MAP_ROUTE_NAVIGATION_POINTS, payload: mapNavigation})
     },[state])
 
+    const setMapRef = useCallback((mapRefArg)=>{
+        dispatch({type: SET_MAP_REF, payload: mapRefArg})
+    },[state])
+
 
     const value = useMemo(()=>({
         ...state,
         setMapNavigation,
-        setMapCenter 
-    }),[state, setMapCenter])
+        setMapCenter,
+        setMapRef
+    }),[state, setMapCenter, setMapRef])
 
     return (
         <MapCustomContext.Provider value={value}>
