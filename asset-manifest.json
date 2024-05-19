@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/react-leaflet-demo/static/css/main.68a74327.css",
-    "main.js": "/react-leaflet-demo/static/js/main.bcd7ba4d.js",
+    "main.js": "/react-leaflet-demo/static/js/main.183354b7.js",
     "static/js/787.6766fb4e.chunk.js": "/react-leaflet-demo/static/js/787.6766fb4e.chunk.js",
     "index.html": "/react-leaflet-demo/index.html",
     "main.68a74327.css.map": "/react-leaflet-demo/static/css/main.68a74327.css.map",
-    "main.bcd7ba4d.js.map": "/react-leaflet-demo/static/js/main.bcd7ba4d.js.map",
+    "main.183354b7.js.map": "/react-leaflet-demo/static/js/main.183354b7.js.map",
     "787.6766fb4e.chunk.js.map": "/react-leaflet-demo/static/js/787.6766fb4e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.68a74327.css",
-    "static/js/main.bcd7ba4d.js"
+    "static/js/main.183354b7.js"
   ]
 }
