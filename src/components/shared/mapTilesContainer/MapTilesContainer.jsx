@@ -52,7 +52,6 @@ const MapTilesDropdownContainer = () => {
     }, [])
 
     const onTileSelection = useCallback((selectedRow) => {
-        console.log("onTileSelection", selectedRow)
         let uri = "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         if (selectedRow?.value) {
             uri = selectedRow.value
